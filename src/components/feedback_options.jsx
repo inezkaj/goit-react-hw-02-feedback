@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import css from './feedback.module.css';
 import React, { Component } from 'react';
 
 export default class FeedbackOptions extends Component {
@@ -19,6 +19,7 @@ export default class FeedbackOptions extends Component {
         {this.props.options.map(el => {
           return (
             <button
+              className={css.btn}
               type="button"
               data-type={el}
               key={el}
