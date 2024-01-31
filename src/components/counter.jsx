@@ -39,15 +39,13 @@ export default class Counter extends Component {
     return this.state.bad + this.state.neutral + this.state.good;
   }
   countPositiveFeedbackPercentage() {
-    if (this.countTotalFeedback() == 0) {
+    if (this.countTotalFeedback() === 0) {
       return 0;
     }
     return Math.round((this.state.good / this.countTotalFeedback()) * 100);
   }
 
   render() {
-    const { step } = this.props;
-
     return (
       <div>
         <Section title="Please leave feedback">
