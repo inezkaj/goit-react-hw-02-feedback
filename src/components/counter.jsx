@@ -2,7 +2,6 @@
 import PropTypes from 'prop-types';
 
 import React, { Component } from 'react';
-
 import Statistics from './statistics';
 import FeedbackOptions from './feedback_options';
 import Section from './section';

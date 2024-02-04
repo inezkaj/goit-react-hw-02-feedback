@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Notification from './notification';
+import PropTypes from 'prop-types';
 
 export default class Statistics extends Component {
   static defaultProps = {
